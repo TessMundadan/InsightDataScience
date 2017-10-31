@@ -191,9 +191,9 @@ class MedianCalculator(object):
 
 
 if __name__ == '__main__':
-    input_file = sys.argv[0]
+    input_file = sys.argv[1]
     output_file_by_zip = sys.argv[2]
-    output_file_by_date =sys.argv[1]
+    output_file_by_date =sys.argv[3]
 
     median_calculator = MedianCalculator(input_file, output_file_by_zip, output_file_by_date)
     median_calculator.compute_medians()
